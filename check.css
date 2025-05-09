@@ -1,0 +1,25 @@
+#pushButton_btn_image2{
+    color: rgb(0, 0, 0);
+    background-color: #d9b8ff;
+    font: 11pt "Segoe UI";
+    border: none;
+    border-radius: 12px;
+
+}
+
+#pushButton_btn_image2:hover {
+    background-color: #edd3ff;
+}
+
+#pushButton_btn_image2:pressed {
+    background-color: #ad98ff;
+    padding-left: 3px;
+	padding-top: 2px;
+  
+
+}
+
+#pushButton_btn_image2:disabled {
+    background-color: rgb(180, 180, 180);
+    color: rgb(100, 100, 100);
+}
