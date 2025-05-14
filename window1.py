@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'Form1XqieZT.ui'
-##
-## Created by: Qt User Interface Compiler version 6.8.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -16,6 +7,7 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
+from PySide6.QtWebEngineWidgets import QWebEngineView
 from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QCheckBox, QComboBox,
     QLabel, QLineEdit, QMainWindow, QMenu,
     QMenuBar, QPushButton, QSizePolicy, QSlider,
@@ -25,21 +17,32 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1130, 734)
-        MainWindow.setMinimumSize(QSize(1130, 734))
-        MainWindow.setMaximumSize(QSize(1130, 734))
+        MainWindow.resize(1130, 745)
+        MainWindow.setMinimumSize(QSize(1130, 745))
+        MainWindow.setMaximumSize(QSize(1130, 745))
         MainWindow.setStyleSheet(u"background-color: rgb(58, 58, 58);\n"
 "color: rgb(98, 223, 185);")
         self.actionNew_Project = QAction(MainWindow)
         self.actionNew_Project.setObjectName(u"actionNew_Project")
+        self.actionSplash = QAction(MainWindow)
+        self.actionSplash.setObjectName(u"actionSplash")
+        self.actionTutorial = QAction(MainWindow)
+        self.actionTutorial.setObjectName(u"actionTutorial")
+        self.actionExit = QAction(MainWindow)
+        self.actionExit.setObjectName(u"actionExit")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.tabWidget_3 = QTabWidget(self.centralwidget)
+        self.widget_background = QWidget(self.centralwidget)
+        self.widget_background.setObjectName(u"widget_background")
+        self.widget_background.setGeometry(QRect(0, 0, 1130, 705))
+        self.widget_background.setStyleSheet(u"background-color: rgb(20, 8, 39);")
+        self.tabWidget_3 = QTabWidget(self.widget_background)
         self.tabWidget_3.setObjectName(u"tabWidget_3")
-        self.tabWidget_3.setGeometry(QRect(-2, 0, 1140, 703))
+        self.tabWidget_3.setGeometry(QRect(0, 0, 1140, 703))
         font = QFont()
         font.setPointSize(12)
         self.tabWidget_3.setFont(font)
+        self.tabWidget_3.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.tabWidget_3.setStyleSheet(u"#tabWidget_3::pane {\n"
 "    border-radius: 8px;\n"
 "    background: #180a2f;\n"
@@ -48,7 +51,7 @@ class Ui_MainWindow(object):
 "#tabWidget_3 QTabBar::tab {\n"
 "    background-color: #001f4d; /* Dark Blue */\n"
 "    color: rgb(180, 161, 255);\n"
-"    padding: 2px 16px;\n"
+"    padding: 2px 20px;\n"
 "    border-top-left-radius: 8px;\n"
 "    border-top-right-radius: 8px;\n"
 "    margin-right: 2px;\n"
@@ -58,17 +61,18 @@ class Ui_MainWindow(object):
 "#tabWidget_3 QTabBar::tab:selected {\n"
 "    background: #5fd9b4; /* Light Green */\n"
 "    color: black;\n"
-"    border: 1px solid #cccccc;\n"
+"    border: 1px solid #56458f;\n"
 "    border-bottom-color: #5fd9b4;\n"
 "}\n"
 "\n"
 "#tabWidget_3 QTabBar::tab:hover {\n"
 "    background: #003366; /* Slightly lighter blue on hover */\n"
-"    color: white;\n"
+"    color: rgb(180, 161, 255);\n"
 "}\n"
 "")
-        self.tabWidget_3.setTabShape(QTabWidget.TabShape.Triangular)
-        self.tabWidget_3.setElideMode(Qt.TextElideMode.ElideNone)
+        self.tabWidget_3.setTabPosition(QTabWidget.TabPosition.North)
+        self.tabWidget_3.setTabShape(QTabWidget.TabShape.Rounded)
+        self.tabWidget_3.setElideMode(Qt.TextElideMode.ElideLeft)
         self.tabWidget_3.setUsesScrollButtons(False)
         self.tabWidget_3.setDocumentMode(False)
         self.tabWidget_3.setTabsClosable(False)
@@ -106,16 +110,16 @@ class Ui_MainWindow(object):
 "")
         self.widget = QWidget(self.widget_9)
         self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(822, 6, 290, 93))
+        self.widget.setGeometry(QRect(822, 6, 292, 93))
         self.widget.setStyleSheet(u"#widget {\n"
 "   \n"
-"	background-color: #140827;\n"
+"	background-color: rgb(39, 39, 39);\n"
 "    border: 1px solid #7f67d5;\n"
-"    border-radius: 10px;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget:hover {\n"
-"    border: 2px solid #1abc9c; /* red border on hover */\n"
+"    border: 1px solid #1abc9c; /* red border on hover */\n"
 "    border-radius: 15px;\n"
 "}\n"
 "")
@@ -186,12 +190,6 @@ class Ui_MainWindow(object):
 "    color: rgb(100, 100, 100);\n"
 "}\n"
 "")
-        self.label_6 = QLabel(self.widget)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(118, 4, 71, 15))
-        self.label_6.setFont(font)
-        self.label_6.setStyleSheet(u"color: rgb(180, 161, 255);\n"
-"background-color: rgb(39, 39, 39);")
         self.pushButton_select_background_btn = QPushButton(self.widget)
         self.pushButton_select_background_btn.setObjectName(u"pushButton_select_background_btn")
         self.pushButton_select_background_btn.setGeometry(QRect(7, 30, 132, 25))
@@ -222,18 +220,31 @@ class Ui_MainWindow(object):
 "    color: rgb(100, 100, 100);\n"
 "}\n"
 "")
+        self.label_6 = QLabel(self.widget)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(2, 2, 288, 24))
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet(u"#label_6 {\n"
+"    color: rgb(180, 161, 255);\n"
+"    background-color: rgb(20, 8, 39);\n"
+"    border-top-left-radius: 12px;\n"
+"    border-top-right-radius: 12px;\n"
+"    border-bottom-left-radius: 0px;\n"
+"    border-bottom-right-radius: 0px;\n"
+"}\n"
+"")
         self.widget_2 = QWidget(self.widget_9)
         self.widget_2.setObjectName(u"widget_2")
-        self.widget_2.setGeometry(QRect(822, 266, 290, 89))
+        self.widget_2.setGeometry(QRect(822, 262, 292, 89))
         self.widget_2.setStyleSheet(u"#widget_2 {\n"
 "   \n"
 "	background-color: #433048;\n"
 "    border: 1px solid #7f67d5;\n"
-"    border-radius: 10px;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget_2:hover {\n"
-"    border: 2px solid #1abc9c; /* red border on hover */\n"
+"    border: 1px solid #1abc9c; /* red border on hover */\n"
 "    border-radius: 15px;\n"
 "}\n"
 "")
@@ -269,47 +280,61 @@ class Ui_MainWindow(object):
 "")
         self.toolButton_open_box_folder = QToolButton(self.widget_2)
         self.toolButton_open_box_folder.setObjectName(u"toolButton_open_box_folder")
-        self.toolButton_open_box_folder.setGeometry(QRect(255, 23, 25, 25))
+        self.toolButton_open_box_folder.setGeometry(QRect(255, 28, 25, 25))
         self.toolButton_open_box_folder.setStyleSheet(u"background-color: rgb(255, 214, 180);\n"
 "color: rgb(0, 0, 0);")
-        self.label_5 = QLabel(self.widget_2)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(53, 4, 185, 14))
-        self.label_5.setFont(font)
-        self.label_5.setStyleSheet(u"color: rgb(180, 161, 255);\n"
-"background-color: #433048")
         self.lineEdit_box_location = QLineEdit(self.widget_2)
         self.lineEdit_box_location.setObjectName(u"lineEdit_box_location")
-        self.lineEdit_box_location.setGeometry(QRect(77, 25, 174, 21))
-        self.lineEdit_box_location.setStyleSheet(u"background-color: rgb(222, 222, 222);\n"
-"color: rgb(0, 0, 0);")
+        self.lineEdit_box_location.setGeometry(QRect(77, 28, 174, 26))
+        self.lineEdit_box_location.setStyleSheet(u"#lineEdit_box_location {\n"
+"    background-color: #1e1e2f;\n"
+"    color: #ffffff;\n"
+"    border: 1px solid #56458f;\n"
+"    border-radius: 6px;\n"
+"    padding: 6px 10px;\n"
+"    font: 10pt \"Segoe UI\";\n"
+"}\n"
+"\n"
+"#lineEdit_box_location:focus {\n"
+"    border: 1px solid #8ae6c3;\n"
+"    background-color: #2a2a40;\n"
+"    color: #ffffff;\n"
+"}\n"
+"")
         self.label_12 = QLabel(self.widget_2)
         self.label_12.setObjectName(u"label_12")
-        self.label_12.setGeometry(QRect(9, 20, 66, 31))
+        self.label_12.setGeometry(QRect(9, 23, 66, 31))
         self.label_12.setFont(font)
         self.label_12.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: #433048")
+        self.label_5 = QLabel(self.widget_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(2, 2, 288, 24))
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"#label_5 {\n"
+"    color: rgb(180, 161, 255);\n"
+"    background-color: rgb(20, 8, 39);\n"
+"    border-top-left-radius: 12px;\n"
+"    border-top-right-radius: 12px;\n"
+"    border-bottom-left-radius: 0px;\n"
+"    border-bottom-right-radius: 0px;\n"
+"}\n"
+"")
         self.widget_3 = QWidget(self.widget_9)
         self.widget_3.setObjectName(u"widget_3")
-        self.widget_3.setGeometry(QRect(822, 365, 291, 125))
+        self.widget_3.setGeometry(QRect(822, 359, 292, 125))
         self.widget_3.setStyleSheet(u"#widget_3 {\n"
 "   \n"
 "	background-color: #22313f;\n"
-"    border: 1px solid #8ac8ef;\n"
-"    border-radius: 10px;\n"
+"    border: 1px solid #7f67d5;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget_3:hover {\n"
-"    border: 2px solid #1abc9c; /* red border on hover */\n"
+"    border: 1px solid #1abc9c; /* red border on hover */\n"
 "    border-radius: 15px;\n"
 "}\n"
 "")
-        self.label_7 = QLabel(self.widget_3)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(49, 3, 193, 22))
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet(u"color: rgb(180, 161, 255);\n"
-"background-color: #22313f")
         self.pushButton_segmentation_button = QPushButton(self.widget_3)
         self.pushButton_segmentation_button.setObjectName(u"pushButton_segmentation_button")
         self.pushButton_segmentation_button.setGeometry(QRect(5, 93, 281, 25))
@@ -347,7 +372,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.spinBox_resolution_epsilon = QSpinBox(self.widget_3)
         self.spinBox_resolution_epsilon.setObjectName(u"spinBox_resolution_epsilon")
-        self.spinBox_resolution_epsilon.setGeometry(QRect(130, 31, 91, 26))
+        self.spinBox_resolution_epsilon.setGeometry(QRect(130, 28, 91, 26))
         self.spinBox_resolution_epsilon.setStyleSheet(u"background-color: rgb(86, 69, 143);\n"
 "color: rgb(255, 255, 255);\n"
 "selection-background-color: rgb(39, 39, 39);\n"
@@ -359,13 +384,13 @@ class Ui_MainWindow(object):
         self.spinBox_resolution_epsilon.setDisplayIntegerBase(10)
         self.label_8 = QLabel(self.widget_3)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(7, 28, 121, 31))
+        self.label_8.setGeometry(QRect(7, 25, 121, 31))
         self.label_8.setFont(font)
         self.label_8.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: #22313f")
         self.pushButton_default_res = QPushButton(self.widget_3)
         self.pushButton_default_res.setObjectName(u"pushButton_default_res")
-        self.pushButton_default_res.setGeometry(QRect(225, 31, 61, 26))
+        self.pushButton_default_res.setGeometry(QRect(225, 28, 61, 26))
         self.pushButton_default_res.setFont(font)
         self.pushButton_default_res.setStyleSheet(u"background-color: rgb(255, 174, 193);\n"
 "color: rgb(0, 0, 0);")
@@ -377,33 +402,66 @@ class Ui_MainWindow(object):
 "background-color: #22313f")
         self.lineEdit_segment_location = QLineEdit(self.widget_3)
         self.lineEdit_segment_location.setObjectName(u"lineEdit_segment_location")
-        self.lineEdit_segment_location.setGeometry(QRect(87, 64, 165, 21))
-        self.lineEdit_segment_location.setStyleSheet(u"background-color: rgb(222, 222, 222);\n"
-"color: rgb(0, 0, 0);")
+        self.lineEdit_segment_location.setGeometry(QRect(77, 60, 174, 28))
+        self.lineEdit_segment_location.setStyleSheet(u"#lineEdit_segment_location {\n"
+"    background-color: #1e1e2f;\n"
+"    color: #ffffff;\n"
+"    border: 1px solid #56458f;\n"
+"    border-radius: 6px;\n"
+"    padding: 6px 10px;\n"
+"    font: 10pt \"Segoe UI\";\n"
+"}\n"
+"\n"
+"#lineEdit_segment_location:focus {\n"
+"    border: 1px solid #8ae6c3;\n"
+"    background-color: #2a2a40;\n"
+"    color: #ffffff;\n"
+"}\n"
+"")
+        self.label_7 = QLabel(self.widget_3)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(2, 2, 288, 24))
+        self.label_7.setFont(font)
+        self.label_7.setStyleSheet(u"#label_7 {\n"
+"    color: rgb(180, 161, 255);\n"
+"    background-color: rgb(20, 8, 39);\n"
+"    border-top-left-radius: 12px;\n"
+"    border-top-right-radius: 12px;\n"
+"    border-bottom-left-radius: 0px;\n"
+"    border-bottom-right-radius: 0px;\n"
+"}\n"
+"")
         self.widget_4 = QWidget(self.widget_9)
         self.widget_4.setObjectName(u"widget_4")
-        self.widget_4.setGeometry(QRect(822, 108, 291, 148))
+        self.widget_4.setGeometry(QRect(822, 106, 292, 148))
         self.widget_4.setStyleSheet(u"#widget_4 {\n"
 "   \n"
 "	background-color: rgb(39, 39, 39);\n"
 "    border: 1px solid #7f67d5;\n"
-"    border-radius: 10px;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget_4:hover {\n"
-"    border: 2px solid #1abc9c; /* red border on hover */\n"
+"    border: 1px solid #1abc9c; /* red border on hover */\n"
 "    border-radius: 15px;\n"
 "}\n"
 "")
         self.label_9 = QLabel(self.widget_4)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(93, 2, 108, 24))
+        self.label_9.setGeometry(QRect(2, 2, 288, 24))
         self.label_9.setFont(font)
-        self.label_9.setStyleSheet(u"color: rgb(180, 161, 255);\n"
-"background-color: rgb(39, 39, 39);")
+        self.label_9.setStyleSheet(u"#label_9 {\n"
+"    color: rgb(180, 161, 255);\n"
+"    background-color: rgb(20, 8, 39);\n"
+"    border-top-left-radius: 12px;\n"
+"    border-top-right-radius: 12px;\n"
+"    border-bottom-left-radius: 0px;\n"
+"    border-bottom-right-radius: 0px;\n"
+"}\n"
+"")
         self.spinBox_height = QSpinBox(self.widget_4)
         self.spinBox_height.setObjectName(u"spinBox_height")
-        self.spinBox_height.setGeometry(QRect(176, 55, 107, 26))
+        self.spinBox_height.setGeometry(QRect(176, 57, 107, 26))
         self.spinBox_height.setStyleSheet(u"background-color: rgb(86, 69, 143);\n"
 "color: rgb(255, 255, 255);\n"
 "selection-background-color: rgb(39, 39, 39);\n"
@@ -415,7 +473,7 @@ class Ui_MainWindow(object):
         self.spinBox_height.setDisplayIntegerBase(10)
         self.spinBox_width = QSpinBox(self.widget_4)
         self.spinBox_width.setObjectName(u"spinBox_width")
-        self.spinBox_width.setGeometry(QRect(64, 55, 107, 26))
+        self.spinBox_width.setGeometry(QRect(64, 57, 107, 26))
         self.spinBox_width.setStyleSheet(u"background-color: rgb(86, 69, 143);\n"
 "color: rgb(255, 255, 255);\n"
 "selection-background-color: rgb(39, 39, 39);\n"
@@ -428,7 +486,7 @@ class Ui_MainWindow(object):
         self.spinBox_width.setDisplayIntegerBase(10)
         self.label_10 = QLabel(self.widget_4)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setGeometry(QRect(17, 55, 38, 21))
+        self.label_10.setGeometry(QRect(17, 57, 38, 21))
         self.label_10.setFont(font)
         self.label_10.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: rgb(39, 39, 39);")
@@ -481,14 +539,14 @@ class Ui_MainWindow(object):
         self.comboBox_profile.addItem("")
         self.comboBox_profile.addItem("")
         self.comboBox_profile.setObjectName(u"comboBox_profile")
-        self.comboBox_profile.setGeometry(QRect(64, 25, 218, 24))
+        self.comboBox_profile.setGeometry(QRect(64, 30, 218, 24))
         self.comboBox_profile.setStyleSheet(u"background-color: rgb(86, 69, 143);\n"
 "color: rgb(255, 255, 255);\n"
 "selection-background-color: rgb(39, 39, 39);\n"
 "font: 12pt \"Segoe UI\";")
         self.label_15 = QLabel(self.widget_4)
         self.label_15.setObjectName(u"label_15")
-        self.label_15.setGeometry(QRect(10, 19, 50, 31))
+        self.label_15.setGeometry(QRect(10, 33, 50, 15))
         self.label_15.setFont(font)
         self.label_15.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: rgb(39, 39, 39);")
@@ -501,50 +559,44 @@ class Ui_MainWindow(object):
         self.checkBox.setChecked(True)
         self.widget_5 = QWidget(self.widget_9)
         self.widget_5.setObjectName(u"widget_5")
-        self.widget_5.setGeometry(QRect(820, 500, 291, 115))
+        self.widget_5.setGeometry(QRect(822, 492, 292, 120))
         self.widget_5.setStyleSheet(u"#widget_5 {\n"
 "   \n"
 "	background-color: rgb(39, 39, 39);\n"
 "    border: 1px solid #7f67d5;\n"
-"    border-radius: 10px;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget_5:hover {\n"
-"    border: 2px solid #1abc9c; /* red border on hover */\n"
+"    border: 1px solid #1abc9c; /* red border on hover */\n"
 "    border-radius: 15px;\n"
 "}\n"
 "")
-        self.label_11 = QLabel(self.widget_5)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setGeometry(QRect(18, 3, 251, 20))
-        self.label_11.setFont(font)
-        self.label_11.setStyleSheet(u"color: rgb(180, 161, 255);\n"
-"background-color: rgb(39, 39, 39);")
         self.label_19 = QLabel(self.widget_5)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(10, 55, 141, 22))
+        self.label_19.setGeometry(QRect(10, 61, 141, 22))
         self.label_19.setFont(font)
         self.label_19.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: rgb(39, 39, 39);")
         self.toolButton_Select_image_folder = QToolButton(self.widget_5)
         self.toolButton_Select_image_folder.setObjectName(u"toolButton_Select_image_folder")
-        self.toolButton_Select_image_folder.setGeometry(QRect(150, 55, 25, 25))
+        self.toolButton_Select_image_folder.setGeometry(QRect(150, 61, 25, 25))
         self.toolButton_Select_image_folder.setStyleSheet(u"background-color: rgb(255, 214, 180);\n"
 "color: rgb(0, 0, 0);")
         self.toolButton_Select_label_folder = QToolButton(self.widget_5)
         self.toolButton_Select_label_folder.setObjectName(u"toolButton_Select_label_folder")
-        self.toolButton_Select_label_folder.setGeometry(QRect(150, 85, 25, 25))
+        self.toolButton_Select_label_folder.setGeometry(QRect(150, 89, 25, 25))
         self.toolButton_Select_label_folder.setStyleSheet(u"background-color: rgb(255, 214, 180);\n"
 "color: rgb(0, 0, 0);")
         self.label_20 = QLabel(self.widget_5)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(10, 83, 141, 22))
+        self.label_20.setGeometry(QRect(10, 89, 141, 22))
         self.label_20.setFont(font)
         self.label_20.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: rgb(39, 39, 39);")
         self.pushButton_force_split = QPushButton(self.widget_5)
         self.pushButton_force_split.setObjectName(u"pushButton_force_split")
-        self.pushButton_force_split.setGeometry(QRect(183, 84, 102, 25))
+        self.pushButton_force_split.setGeometry(QRect(186, 90, 102, 25))
         self.pushButton_force_split.setFont(font2)
         self.pushButton_force_split.setStyleSheet(u"#pushButton_force_split{\n"
 "    color: rgb(0, 0, 0);\n"
@@ -575,7 +627,7 @@ class Ui_MainWindow(object):
 "")
         self.label_17 = QLabel(self.widget_5)
         self.label_17.setObjectName(u"label_17")
-        self.label_17.setGeometry(QRect(10, 27, 81, 22))
+        self.label_17.setGeometry(QRect(10, 32, 81, 22))
         self.label_17.setFont(font)
         self.label_17.setStyleSheet(u"color: rgb(180, 161, 255);\n"
 "background-color: rgb(39, 39, 39);")
@@ -587,38 +639,62 @@ class Ui_MainWindow(object):
         self.comboBox_split.addItem("")
         self.comboBox_split.addItem("")
         self.comboBox_split.setObjectName(u"comboBox_split")
-        self.comboBox_split.setGeometry(QRect(90, 26, 193, 24))
+        self.comboBox_split.setGeometry(QRect(90, 31, 193, 24))
         self.comboBox_split.setStyleSheet(u"background-color: rgb(86, 69, 143);\n"
 "color: rgb(255, 255, 255);\n"
 "selection-background-color: rgb(39, 39, 39);\n"
 "font: 12pt \"Segoe UI\";")
         self.pushButton_splitter_default = QPushButton(self.widget_5)
         self.pushButton_splitter_default.setObjectName(u"pushButton_splitter_default")
-        self.pushButton_splitter_default.setGeometry(QRect(223, 53, 61, 26))
+        self.pushButton_splitter_default.setGeometry(QRect(223, 58, 61, 26))
         self.pushButton_splitter_default.setFont(font)
         self.pushButton_splitter_default.setStyleSheet(u"background-color: rgb(255, 174, 193);\n"
 "color: rgb(0, 0, 0);")
+        self.label_11 = QLabel(self.widget_5)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setGeometry(QRect(2, 2, 288, 24))
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet(u"#label_11 {\n"
+"    color: rgb(180, 161, 255);\n"
+"    background-color: rgb(20, 8, 39);\n"
+"    border-top-left-radius: 12px;\n"
+"    border-top-right-radius: 12px;\n"
+"    border-bottom-left-radius: 0px;\n"
+"    border-bottom-right-radius: 0px;\n"
+"}\n"
+"")
         self.widget_10 = QWidget(self.widget_8)
         self.widget_10.setObjectName(u"widget_10")
         self.widget_10.setGeometry(QRect(5, 5, 1120, 40))
-        self.widget_10.setStyleSheet(u"background-color: rgb(86, 69, 143);")
+        self.widget_10.setStyleSheet(u"#widget_10 {\n"
+"   \n"
+"	background-color: #56458f;\n"
+"    border: 1px solid #140827;\n"
+"	color: rgb(121, 98, 203);\n"
+"    border-radius: 10px;\n"
+"}\n"
+"\n"
+"")
         self.label_1 = QLabel(self.widget_10)
         self.label_1.setObjectName(u"label_1")
-        self.label_1.setGeometry(QRect(8, 8, 121, 21))
+        self.label_1.setGeometry(QRect(8, 8, 113, 21))
         font4 = QFont()
         font4.setPointSize(11)
         self.label_1.setFont(font4)
-        self.label_1.setStyleSheet(u"color: rgb(255, 255, 255);")
+        self.label_1.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(86, 69, 143);")
         self.label_2 = QLabel(self.widget_10)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(228, 8, 121, 21))
+        self.label_2.setGeometry(QRect(228, 8, 115, 21))
         self.label_2.setFont(font4)
-        self.label_2.setStyleSheet(u"color: rgb(255, 255, 255);")
+        self.label_2.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(86, 69, 143);")
         self.label_3 = QLabel(self.widget_10)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(689, 8, 195, 21))
+        self.label_3.setGeometry(QRect(689, 8, 182, 21))
         self.label_3.setFont(font4)
-        self.label_3.setStyleSheet(u"color: rgb(255, 255, 255);")
+        self.label_3.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(86, 69, 143);")
         self.pushButton_open_folder = QPushButton(self.widget_10)
         self.pushButton_open_folder.setObjectName(u"pushButton_open_folder")
         self.pushButton_open_folder.setGeometry(QRect(990, 7, 123, 25))
@@ -683,24 +759,86 @@ class Ui_MainWindow(object):
         self.spinBox_starting_image_input.setValue(1)
         self.label_4 = QLabel(self.widget_10)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(450, 8, 131, 21))
+        self.label_4.setGeometry(QRect(450, 8, 127, 21))
         self.label_4.setFont(font4)
-        self.label_4.setStyleSheet(u"color: rgb(255, 255, 255);")
+        self.label_4.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(86, 69, 143);")
         self.tabWidget_3.addTab(self.tab_1, "")
+        self.tab = QWidget()
+        self.tab.setObjectName(u"tab")
+        self.widget_editor = QWidget(self.tab)
+        self.widget_editor.setObjectName(u"widget_editor")
+        self.widget_editor.setGeometry(QRect(0, 0, 1130, 676))
+        self.widget_editor.setStyleSheet(u"#widget_editor {\n"
+"   \n"
+"	background-color: #140827;\n"
+"    border: 2px solid #5fd9b4;\n"
+"    \n"
+"}\n"
+"\n"
+"#widget_editor:hover {\n"
+"    border: 2px solid #1abc9c; /* red border on hover */\n"
+"    \n"
+"}\n"
+"")
+        self.webEngineView = QWebEngineView(self.widget_editor)
+        self.webEngineView.setObjectName(u"webEngineView")
+        self.webEngineView.setGeometry(QRect(0, 2, 1445, 674))
+        self.webEngineView.setStyleSheet(u"background-color: rgb(103, 103, 103);\n"
+"color: rgb(255, 255, 255);")
+        self.webEngineView.setUrl(QUrl(u"https://www.photopea.com/#%7B%22files%22%3A%5B%22https%3A%2F%2Fwww.photopea.com%2Fapi%2Fimg2%2Fpug.png%22%5D%2C%22environment%22%3A%7B%7D%7D"))
+        self.webEngineView.setZoomFactor(1.000000000000000)
+        self.pushButton_show_in_browser = QPushButton(self.widget_editor)
+        self.pushButton_show_in_browser.setObjectName(u"pushButton_show_in_browser")
+        self.pushButton_show_in_browser.setGeometry(QRect(600, 10, 110, 20))
+        font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
+        font5.setPointSize(9)
+        font5.setBold(False)
+        font5.setItalic(False)
+        self.pushButton_show_in_browser.setFont(font5)
+        self.pushButton_show_in_browser.setStyleSheet(u"#pushButton_show_in_browser{\n"
+"    color: rgb(0, 0, 0);\n"
+"    background-color: #62dfb9;\n"
+"    font: 9pt \"Segoe UI\";\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"#pushButton_show_in_browser:hover {\n"
+"    background-color: rgb(134, 255, 215);\n"
+"}\n"
+"\n"
+"#pushButton_show_in_browser:pressed {\n"
+"    background-color: #ad98ff;\n"
+"    padding-left: 3px;\n"
+"	padding-top: 2px;\n"
+"  \n"
+"\n"
+"}\n"
+"\n"
+"#pushButton_show_in_browser:disabled {\n"
+"    background-color: rgb(180, 180, 180);\n"
+"    color: rgb(100, 100, 100);\n"
+"}\n"
+"")
+        self.tabWidget_3.addTab(self.tab, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
         self.widget_graph_3 = QWidget(self.tab_2)
         self.widget_graph_3.setObjectName(u"widget_graph_3")
-        self.widget_graph_3.setGeometry(QRect(0, 0, 1140, 672))
+        self.widget_graph_3.setGeometry(QRect(0, 0, 1140, 681))
         self.widget_graph_3.setStyleSheet(u"background-color: rgb(29, 24, 49);")
         self.widget_box = QWidget(self.widget_graph_3)
         self.widget_box.setObjectName(u"widget_box")
-        self.widget_box.setGeometry(QRect(2, 0, 1130, 673))
+        self.widget_box.setGeometry(QRect(0, 0, 1130, 675))
         self.widget_box.setStyleSheet(u"#widget_box {\n"
 "   \n"
 "	background-color: #140827;\n"
-"    border: 1px solid #7f67d5;\n"
-"    border-radius: 10px;\n"
+"    border: 2px solid #5fd9b4;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget_box:hover {\n"
@@ -777,12 +915,12 @@ class Ui_MainWindow(object):
         self.widget_graph_4.setStyleSheet(u"background-color:#140827;")
         self.widget_segment = QWidget(self.widget_graph_4)
         self.widget_segment.setObjectName(u"widget_segment")
-        self.widget_segment.setGeometry(QRect(2, 0, 1130, 673))
+        self.widget_segment.setGeometry(QRect(0, 0, 1130, 675))
         self.widget_segment.setStyleSheet(u"#widget_segment {\n"
 "   \n"
 "	background-color: #140827;\n"
-"    border: 1px solid #7f67d5;\n"
-"    border-radius: 10px;\n"
+"    border: 2px solid #5fd9b4;\n"
+"    border-radius: 15px;\n"
 "}\n"
 "\n"
 "#widget_segment:hover {\n"
@@ -854,17 +992,62 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1130, 33))
-        self.menubar.setStyleSheet(u"background-color: rgb(36, 36, 36);\n"
-"color: rgb(98, 223, 185);")
+        self.menubar.setGeometry(QRect(0, 0, 1130, 41))
+        self.menubar.setStyleSheet(u"QMenuBar {\n"
+"    background-color: #140827;\n"
+"    color: white;\n"
+"    font: 11pt \"Segoe UI\";\n"
+"    padding: 2px;\n"
+"}\n"
+"\n"
+"QMenuBar::item {\n"
+"    background: transparent;\n"
+"    padding: 6px 14px;\n"
+"    margin: 2px;\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QMenuBar::item:selected {\n"
+"    background: #56458f;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QMenuBar::item:pressed {\n"
+"    background: #5fd9b4;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QMenu {\n"
+"    background-color: #2b2b2b;\n"
+"    color: white;\n"
+"    border: 1px solid #444;\n"
+"    padding: 6px;\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QMenu::item {\n"
+"    padding: 6px 18px;\n"
+"    background-color: transparent;\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QMenu::item:selected {\n"
+"    background-color: #3a9ff5;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QMenu::separator {\n"
+"    height: 5px;\n"
+"    background: #555;\n"
+"    margin: 2px 8px;\n"
+"}\n"
+"")
         self.menuFile = QMenu(self.menubar)
         self.menuFile.setObjectName(u"menuFile")
         self.menuEdit = QMenu(self.menubar)
         self.menuEdit.setObjectName(u"menuEdit")
         self.menuForm = QMenu(self.menubar)
         self.menuForm.setObjectName(u"menuForm")
-        self.menuSettings = QMenu(self.menubar)
-        self.menuSettings.setObjectName(u"menuSettings")
         self.menuHelp = QMenu(self.menubar)
         self.menuHelp.setObjectName(u"menuHelp")
         self.menuAbout = QMenu(self.menubar)
@@ -874,10 +1057,12 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuEdit.menuAction())
         self.menubar.addAction(self.menuForm.menuAction())
-        self.menubar.addAction(self.menuSettings.menuAction())
         self.menubar.addAction(self.menuHelp.menuAction())
         self.menubar.addAction(self.menuAbout.menuAction())
         self.menuFile.addAction(self.actionNew_Project)
+        self.menuFile.addAction(self.actionExit)
+        self.menuHelp.addAction(self.actionTutorial)
+        self.menuAbout.addAction(self.actionSplash)
 
         self.retranslateUi(MainWindow)
 
@@ -888,10 +1073,13 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Label-Blend v1.1", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Label-Blend v1.1 Synthetic image studio", None))
         self.actionNew_Project.setText(QCoreApplication.translate("MainWindow", u"New Project", None))
+        self.actionSplash.setText(QCoreApplication.translate("MainWindow", u"Splash", None))
+        self.actionTutorial.setText(QCoreApplication.translate("MainWindow", u"Tutorial", None))
+        self.actionExit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"                </Background Environment>", None))
-        self.pushButton_generate_single_btn.setText(QCoreApplication.translate("MainWindow", u"Generate Image", None))
+        self.pushButton_generate_single_btn.setText(QCoreApplication.translate("MainWindow", u"Random Roll", None))
 #if QT_CONFIG(shortcut)
         self.pushButton_generate_single_btn.setShortcut(QCoreApplication.translate("MainWindow", u"Shift+G", None))
 #endif // QT_CONFIG(shortcut)
@@ -902,7 +1090,6 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(shortcut)
         self.pushButton_select_cutouts_btn.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+P", None))
 #endif // QT_CONFIG(shortcut)
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"ViewPort", None))
 #if QT_CONFIG(tooltip)
         self.pushButton_select_background_btn.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Select Environment</p><p>ShortCut: Ctrl+O</p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
@@ -910,6 +1097,7 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(shortcut)
         self.pushButton_select_background_btn.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+O", None))
 #endif // QT_CONFIG(shortcut)
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"                   Image Settings", None))
         self.pushButton_generate_btn.setText(QCoreApplication.translate("MainWindow", u"Save Bounding Box Dataset", None))
 #if QT_CONFIG(shortcut)
         self.pushButton_generate_btn.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+S", None))
@@ -918,11 +1106,10 @@ class Ui_MainWindow(object):
         self.toolButton_open_box_folder.setToolTip(QCoreApplication.translate("MainWindow", u"Open Box Folder", None))
 #endif // QT_CONFIG(tooltip)
         self.toolButton_open_box_folder.setText(QCoreApplication.translate("MainWindow", u"...", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Bounding Box Annotation", None))
         self.lineEdit_box_location.setText("")
         self.lineEdit_box_location.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Location...", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"Location:", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Mask Polygons Annotation", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"            Bounding Box Annotation", None))
         self.pushButton_segmentation_button.setText(QCoreApplication.translate("MainWindow", u"Save Mask Segment Dataset", None))
 #if QT_CONFIG(shortcut)
         self.pushButton_segmentation_button.setShortcut(QCoreApplication.translate("MainWindow", u"Shift+S", None))
@@ -939,7 +1126,8 @@ class Ui_MainWindow(object):
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"Location:", None))
         self.lineEdit_segment_location.setText("")
         self.lineEdit_segment_location.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Location...", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Image Settings", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"            Mask Polygons Annotation", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"                   Image Settings", None))
 #if QT_CONFIG(tooltip)
         self.spinBox_height.setToolTip(QCoreApplication.translate("MainWindow", u"Polygon Vertices Epsilon Value", None))
 #endif // QT_CONFIG(tooltip)
@@ -966,7 +1154,6 @@ class Ui_MainWindow(object):
 
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"Profile:", None))
         self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Data Splitting Train / Val", None))
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Manual Dataset Splitter   *Optional", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"Select Image Folder", None))
 #if QT_CONFIG(tooltip)
         self.toolButton_Select_image_folder.setToolTip(QCoreApplication.translate("MainWindow", u"Open Box Folder", None))
@@ -990,6 +1177,7 @@ class Ui_MainWindow(object):
         self.comboBox_split.setItemText(5, QCoreApplication.translate("MainWindow", u"30 : 70 UnderFit", None))
 
         self.pushButton_splitter_default.setText(QCoreApplication.translate("MainWindow", u"Default", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"    Manual Dataset Splitter   <Optional>", None))
         self.label_1.setText(QCoreApplication.translate("MainWindow", u"Min Cutout Size:", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Max Cutout Size:", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"No. of Images to Generate:", None))
@@ -1002,16 +1190,20 @@ class Ui_MainWindow(object):
         self.spinBox_max_size_input.setPrefix("")
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Starting Image No:", None))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_1), QCoreApplication.translate("MainWindow", u"Generator", None))
+        self.pushButton_show_in_browser.setText(QCoreApplication.translate("MainWindow", u"Open in Browser", None))
+#if QT_CONFIG(shortcut)
+        self.pushButton_show_in_browser.setShortcut(QCoreApplication.translate("MainWindow", u"Shift+G", None))
+#endif // QT_CONFIG(shortcut)
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Cutouts Maker", None))
         self.pushButton_btn_select_label.setText(QCoreApplication.translate("MainWindow", u"Select Box Annotate File", None))
         self.pushButton_btn_select_image.setText(QCoreApplication.translate("MainWindow", u"Select Image", None))
-        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Box Viewer", None))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Box View", None))
         self.pushButton_btn_image2.setText(QCoreApplication.translate("MainWindow", u"Select Image", None))
         self.pushButton_btn_txt2.setText(QCoreApplication.translate("MainWindow", u"Select Segment Txt File", None))
-        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Masked Segment Viewer", None))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Masked Segment View", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
         self.menuEdit.setTitle(QCoreApplication.translate("MainWindow", u"Edit", None))
         self.menuForm.setTitle(QCoreApplication.translate("MainWindow", u"Form", None))
-        self.menuSettings.setTitle(QCoreApplication.translate("MainWindow", u"Settings", None))
         self.menuHelp.setTitle(QCoreApplication.translate("MainWindow", u"Help", None))
         self.menuAbout.setTitle(QCoreApplication.translate("MainWindow", u"About", None))
     # retranslateUi
