@@ -21,7 +21,7 @@
 
 | Home | Inbuilt image editor |
 | ![home](images/Home.jpg) | ![inbuilt_editor](images/inbuilt_editor.jpg) |
-
+| ------------ | ----------- |
 | Adding cutouts | Workspace |
 | ![adding_cutouts](images/adding_cutouts.jpg) | ![workspace](images/workspace.jpg) |
 
