@@ -7,7 +7,7 @@
 
 ## ✨ Key Features
 
-- 🎨 **Drag & Drop Studio**: Load cutouts and background images easily.
+- 🎨 **User Friendly easy to use**: Load cutouts and background images easily.
 - 🏷️ **Auto Label Generation**: Creates YOLO-format `.txt` annotations alongside each synthetic image.
 - 🔁 **Randomized Augmentation**: Applies rotation, scaling, and random placement.
 - 🎨 **Inbuilt Photoshope**: User can create cutouts inside the 'cutouts maker' Tab.
@@ -44,17 +44,17 @@ LabelBlend is designed to be a core utility for:
       🚗 Datasets for modern agricultural Ai applications,autonomous driving, object detection, or instance segmentation
 
 📌 How to Use:-
-1.Load transparent cutout images with class labels.
+    
+    1.Load transparent cutout images with class labels.
+    2.Add background images.
+    3.Set parameters:-
 
-2.Add background images.
-3.Set parameters:-
-
-    a.Number of images to generate
-    b.Minimum/maximum size for cutouts
-    c.Starting image number
-
-4.Click Generate.
-5.Check output/images/ and output/labels/ for results.
+          a.Number of images to generate
+          b.Minimum/maximum size for cutouts
+          c.Starting image number
+    
+    4.Click Generate.
+    5.Check output/images/ and output/labels/ for results.
 
 📎 Notes
       
