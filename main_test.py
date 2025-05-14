@@ -1,5 +1,7 @@
-import sys
 import os
+os.environ["QTWEBENGINE_CHROMIUM_FLAGS"] = "--log-level=3"
+import sys
+
 import shutil
 import random
 from PySide6.QtWidgets import (
@@ -24,6 +26,8 @@ from PySide6.QtWidgets import (
 )
 from natsort import natsorted
 
+from PySide6.QtWebEngineWidgets import QWebEngineView 
+from PySide6.QtWebEngineCore import QWebEngineProfile, QWebEngineSettings
 
 
 
@@ -50,7 +54,7 @@ class window(QMainWindow):
         self.form = Ui_MainWindow()
         self.form.setupUi(self)
         
-        self.setWindowTitle("Random Image Generator")
+       
         self.cutout_images = []
         self.background_images = []
         
@@ -117,7 +121,33 @@ class window(QMainWindow):
         self.form.horizontalSlider_quality.valueChanged.connect(self.update_quality_label)
         self.form.spinBox_num_quality.valueChanged.connect(self.update_quality_slider)
         self.form.comboBox_profile.currentIndexChanged.connect(self.update_image_settings)
-
+        
+        
+        self.form.pushButton_show_in_browser.clicked.connect(self.open_photopea_url)
+        
+        profile = QWebEngineProfile.defaultProfile()
+        settings = self.form.webEngineView.settings()
+        settings.setAttribute(QWebEngineSettings.LocalContentCanAccessRemoteUrls, True)  # Allow remote URLs in local content
+        settings.setAttribute(QWebEngineSettings.LocalContentCanAccessFileUrls, True)    # Allow local file URLs
+        settings.setAttribute(QWebEngineSettings.PluginsEnabled, True)
+        profile.downloadRequested.connect(self.handle_download)
+        
+    def handle_download(self, download):
+        filename = download.downloadFileName()
+        path, _ = QFileDialog.getSaveFileName(self, "Save File As", filename)
+        if path:
+            try:
+                download.setDownloadDirectory(os.path.dirname(path))
+                download.setDownloadFileName(os.path.basename(path))
+            except AttributeError:
+                pass  # fallback for older versions
+            download.accept()
+            
+            
+    def open_photopea_url(self):
+        url = "https://www.photopea.com#%7B%22files%22%3A%5B%22https%3A%2F%2Fwww.photopea.com%2Fapi%2Fimg2%2Fpug.png%22%5D%2C%22environment%22%3A%7B%7D%7D"
+        QDesktopServices.openUrl(QUrl(url))
+        
         
         
     def update_image_settings(self, index):
@@ -318,11 +348,11 @@ class window(QMainWindow):
     def select_background(self):
         files, _ = QFileDialog.getOpenFileNames(self, "Select Background Images", "", "Images (*.jpg *.png *.jpeg)")
         if files:
-            self.background_images = [Image.open(f).convert("RGBA").resize((800, 600)) for f in files]
+            self.background_images = [Image.open(f).convert("RGBA").resize((810, 600)) for f in files]
             self.show_image(self.background_images[0])  # Show the first selected background
 
         
-    def generate_random_image(self, size=(810, 580)):
+    def generate_random_image(self, size=(810, 610)):
         if not self.cutout_images or not self.background_images:
             return None
 
@@ -360,7 +390,7 @@ class window(QMainWindow):
 
 
     def generate_image_no_save(self):
-        image = self.generate_random_image(size=(810, 580))
+        image = self.generate_random_image(size=(810, 610))
         if image:
             self.show_image(image)
         else:
