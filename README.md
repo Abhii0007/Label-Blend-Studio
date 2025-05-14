@@ -18,9 +18,9 @@
 - 📦**Object Oriented workflow**: user can open multiple workspace, so that it can work on different datasets simultaneously.
   
 ## 📸 Example Output
-|------------|-----------|
+
 | Home | Inbuilt image editor |
-|            |           |
+|------------|-----------|
 | ![home](images/Home.jpg) | ![inbuilt_editor](images/inbuilt_editor.jpg) |
 |------------|-----------|
 | Adding cutouts | Workspace |
