@@ -20,15 +20,19 @@
 ## 📸 Example Output
 
 | Home | Inbuilt image editor |
-| ![home](images/Home.jpg) | ![inbuilt_editor](images/inbuilt_editor.jpg) |
 |--------------|---------------|
+| ![home](images/Home.jpg) | ![inbuilt_editor](images/inbuilt_editor.jpg) |
+
 | Adding cutouts | Workspace |
+|--------------|---------------|
 | ![adding_cutouts](images/adding_cutouts.jpg) | ![workspace](images/workspace.jpg) |
 
 | Output structure | Datasets |
+|--------------|---------------|
 | ![output_structure](images/output_structure.jpg) | ![datasets](images/datasets.jpg) |
 
 | Bounding box | Segment |
+|--------------|---------------|
 | ![bounding_box](images/bounding_box.jpg) | ![segment](images/segment.jpg) |
 
 
