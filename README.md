@@ -1,21 +1,21 @@
 # 🧠 LabelBlend v1.1 — Synthetic Image Studio
 
-**LabelBlend** is a powerful desktop application for generating high-quality large amount of synthetic images with annotations. Designed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training.
+**LabelBlend** is a powerful and user friendly desktop application tool designed for generating high-quality labelled dataset of synthetic images with random roll approach . Designed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training. it uses png cutouts and merge with background environment with random location, rotation and scaling vectors.
 
-> 🚀 Create multi-class datasets with bounding box or segmentation annotations for AI/ML pipelines in minutes.
-
----
+> 🚀 By labelblend, now we can create multi-class datasets with bounding box or segmentation annotations for AI/ML pipelines in minutes or even seconds.
 
 ## ✨ Key Features
 
 - 🎨 **Drag & Drop Studio**: Load cutouts and background images easily.
 - 🏷️ **Auto Label Generation**: Creates YOLO-format `.txt` annotations alongside each synthetic image.
 - 🔁 **Randomized Augmentation**: Applies rotation, scaling, and random placement.
+- 🎨 **Inbuilt **: User can create cutouts inside the 'cutouts maker' Tab.
+- ✅ **Annotations**: Supports both Bounding and Mask Segmentation annotation. 
 - 🗂️ **Multi-class Support**: Generate data for multiple object classes simultaneously.
 - 📦 **Export-Ready Datasets**: Structured output folder with `images/` and `labels/`.
-
----
-
+- ⏩ **Multiprocessing** :  it uses modern approach to generate dataset parallely by using mult processing and threading.
+- 📦**Object Oriented workflow**: user can open multiple workspace, so that it can work on different datasets simultaneously.
+  
 ## 📸 Example Output
 
 | Synthetic Image | YOLO Label |
