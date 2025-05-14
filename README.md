@@ -21,7 +21,7 @@
 
 | Synthetic Image | YOLO Label |
 |-----------------|------------|
-| ![Example](assets/Image10.png) | `0 0.52 0.55 0.2 0.2` (YOLO format) |
+| ![Example](images/segment.jpg) | `0 0.52 0.55 0.2 0.2` (YOLO format) |
 
 ---
 
