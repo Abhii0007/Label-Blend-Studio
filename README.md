@@ -20,7 +20,7 @@
 ## 📸 Example Output
 |------------|-----------|
 | Home | Inbuilt image editor |
-|------------|-----------|
+|            |           |
 | ![home](images/Home.jpg) | ![inbuilt_editor](images/inbuilt_editor.jpg) |
 |------------|-----------|
 | Adding cutouts | Workspace |
