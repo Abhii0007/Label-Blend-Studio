@@ -17,7 +17,7 @@
 - ⏩ **Multiprocessing** :  it uses modern approach to generate dataset parallely by using mult processing and threading.
 - 📦**Object Oriented workflow**: user can open multiple workspace, so that it can work on different datasets simultaneously.
   
-## 📸 Example Output
+## 📸 Proof of Concept
 
 | Home | Inbuilt image editor |
 |--------------|---------------|
