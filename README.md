@@ -9,7 +9,7 @@
 - 🎨 **Drag & Drop Studio**: Load cutouts and background images easily.
 - 🏷️ **Auto Label Generation**: Creates YOLO-format `.txt` annotations alongside each synthetic image.
 - 🔁 **Randomized Augmentation**: Applies rotation, scaling, and random placement.
-- 🎨 **Inbuilt **: User can create cutouts inside the 'cutouts maker' Tab.
+- 🎨 **Inbuilt Photoshope**: User can create cutouts inside the 'cutouts maker' Tab.
 - ✅ **Annotations**: Supports both Bounding and Mask Segmentation annotation. 
 - 🗂️ **Multi-class Support**: Generate data for multiple object classes simultaneously.
 - 📦 **Export-Ready Datasets**: Structured output folder with `images/` and `labels/`.
