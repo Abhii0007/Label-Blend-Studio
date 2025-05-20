@@ -23,3 +23,35 @@
     background-color: rgb(180, 180, 180);
     color: rgb(100, 100, 100);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#lineEdit_segment_location {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    border: 1px solid #56458f;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font: 10pt "Segoe UI";
+}
+
+#lineEdit_segment_location:focus {
+    border: 1px solid #8ae6c3;
+    background-color: #2a2a40;
+    color: #ffffff;
+}

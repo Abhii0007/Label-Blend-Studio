@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = false
+name = "pip_conf_index_global"
+
+[packages]
+pyside6 = "*"
+pillow = "*"
+numpy = "*"
+opencv-python = "*"
+natsort = "*"
+ultralytics = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
