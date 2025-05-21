@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'Form_testTDyfGN.ui'
+## Form generated from reading UI file 'Form_testXwwFPa.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
@@ -96,8 +96,8 @@ class Ui_MainWindow(object):
         self.tabWidget_3.setElideMode(Qt.TextElideMode.ElideLeft)
         self.tabWidget_3.setUsesScrollButtons(False)
         self.tabWidget_3.setDocumentMode(False)
-        self.tabWidget_3.setTabsClosable(False)
-        self.tabWidget_3.setMovable(False)
+        self.tabWidget_3.setTabsClosable(True)
+        self.tabWidget_3.setMovable(True)
         self.tabWidget_3.setTabBarAutoHide(False)
         self.tab_1 = QWidget()
         self.tab_1.setObjectName(u"tab_1")
@@ -129,6 +129,9 @@ class Ui_MainWindow(object):
 "    border-radius: 15px;\n"
 "}\n"
 "")
+        self.label.setPixmap(QPixmap(u"banner3.jpg"))
+        self.label.setScaledContents(True)
+        self.label.setMargin(7)
         self.widget = QWidget(self.widget_9)
         self.widget.setObjectName(u"widget")
         self.widget.setGeometry(QRect(1612, 7, 292, 100))
@@ -1240,7 +1243,7 @@ class Ui_MainWindow(object):
         self.actionExit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.actionComing_soon.setText(QCoreApplication.translate("MainWindow", u"Coming soon..", None))
         self.actionComing_soon_2.setText(QCoreApplication.translate("MainWindow", u"Coming soon..", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"                                                      </Background Environment>", None))
+        self.label.setText("")
         self.pushButton_generate_single_btn.setText(QCoreApplication.translate("MainWindow", u"Random Roll", None))
 #if QT_CONFIG(shortcut)
         self.pushButton_generate_single_btn.setShortcut(QCoreApplication.translate("MainWindow", u"Shift+G", None))
