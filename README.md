@@ -14,7 +14,7 @@
 - ✅ **Annotations**: Supports both Bounding and Mask Segmentation annotation. 
 - 🗂️ **Multi-class Support**: Generate data for multiple object classes simultaneously.
 - 📦 **Export-Ready Datasets**: Structured output folder with `images/` and `labels/`.
-- ⏩ **Multiprocessing** :  it uses modern approach to generate dataset parallely by using mult processing and threading.
+- ⏩ **Multiprocessing** :  it uses modern approach to generate dataset parallely by using multiprocessing and threading.
 - 📦**Object Oriented workflow**: user can open multiple workspace, so that it can work on different datasets simultaneously.
   
 ## 📸 Project Insights
