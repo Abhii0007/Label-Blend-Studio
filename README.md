@@ -4,7 +4,9 @@
 
 Project Tutorial on Youtube
 [![YouTube](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg)](https://youtu.be/Pplf59qdIj4)
-
+<a href="https://youtu.be/Pplf59qdIj4" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" width="40" height="40"/>
+</a>
 
 ![workspace](images/Home.jpg)
 > 🚀 By labelblend, now we can create multi-class datasets with bounding box or segmentation annotations for AI/ML pipelines in minutes or even seconds.
