@@ -2,9 +2,7 @@
 
 **LabelBlend** is a powerful and user friendly desktop application tool designed for generating high-quality labelled dataset of synthetic images with random roll approach . Designed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training. it uses png cutouts and merge with background environment with random location, rotation and scaling vectors.
 
-# Project Tutorial on Youtube
-
-[![YouTube](https://img.icons8.com/color/48/000000/youtube-play.png)](https://youtu.be/Pplf59qdIj4)
+# Project Tutorial on Youtube [![YouTube](https://img.icons8.com/color/48/000000/youtube-play.png)](https://youtu.be/Pplf59qdIj4)
 
 
 ![workspace](images/Home.jpg)
