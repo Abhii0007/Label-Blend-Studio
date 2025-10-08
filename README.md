@@ -1,6 +1,6 @@
-# 🧠 LabelBlend v1.1 — Synthetic Image Studio
+# 🧠 LabelBlend v1.1 — Synthetic Image Studio Tool For Supervised Learning.
 
-**LabelBlend** is a powerful and user friendly desktop application tool designed for generating high-quality labelled dataset of synthetic images with random roll approach . Designed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training. it uses png cutouts and merge with background environment with random location, rotation and scaling vectors.
+**LabelBlend** is a powerful and user friendly desktop application tool designed for generating high-quality labelled dataset of synthetic images with random augmentation and lightning. developed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training. it uses png cutouts and merge with background environment with random location, rotation and scaling vectors. its uses a concept called synthetic data generation to fulfill the labelled data scarcity and underfitting problem in computer vision.
 
 ## Project Tutorial on Youtube
 [![YouTube](https://img.icons8.com/color/48/000000/youtube-play.png)](https://youtu.be/Pplf59qdIj4)
