@@ -1,9 +1,9 @@
-from PySide6.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication, QWidget, QLabel, QPushButton, QVBoxLayout,
     QHBoxLayout, QListWidget, QListWidgetItem, QGraphicsView,
     QGraphicsScene, QDialog, QTextEdit, QFormLayout, QLineEdit
 )
-from PySide6.QtCore import Qt
+from PyQt6.QtCore import Qt
 import sys
 
 class LayerWidget(QWidget):
