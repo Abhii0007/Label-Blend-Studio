@@ -1,11 +1,11 @@
 import sys
 import json
 import os
-from PySide6.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication, QWidget, QPushButton, QTextEdit, QVBoxLayout, QHBoxLayout,
     QLineEdit, QScrollArea, QFrame, QInputDialog, QMessageBox
 )
-from PySide6.QtCore import Qt
+from PyQt6.QtCore import Qt
 
 SNIPPET_FILE = "snippets.json"
 
