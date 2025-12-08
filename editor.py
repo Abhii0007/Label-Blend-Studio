@@ -1,11 +1,11 @@
-from PySide6.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QLabel, QPushButton, QFileDialog,
     QVBoxLayout, QWidget
 )
-from PySide6.QtGui import (
+from PyQt6.QtGui import (
     QPixmap, QPainter, QPen, QBrush, QMouseEvent, QPolygon, QColor, QRegion
 )
-from PySide6.QtCore import Qt, QPoint, QRect
+from PyQt6.QtCore import Qt, QPoint, QRect
 import sys, math
 
 HANDLE_SIZE = 10  # size of square handles
