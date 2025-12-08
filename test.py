@@ -2,12 +2,12 @@ import sys
 import cv2
 import numpy as np
 import random
-from PySide6.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication, QWidget, QPushButton, QVBoxLayout,
     QFileDialog, QGraphicsView, QGraphicsScene, QGraphicsPixmapItem
 )
-from PySide6.QtGui import QPixmap, QImage, QPainter
-from PySide6.QtCore import Qt
+from PyQt6.QtGui import QPixmap, QImage, QPainter
+from PyQt6.QtCore import Qt
 
 
 # ---------- Bounding Box Loader ----------
