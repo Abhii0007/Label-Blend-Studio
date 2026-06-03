@@ -1,4 +1,6 @@
-# 🧠 LabelBlend v1.1 — Synthetic Image Studio Tool For Supervised Learning.
+# 🧠 LabelBlend v1.1 — AI Powered Image segmentation and augmentation Tool For computer vision.
+
+Model used as backend - META (SAM 2) Vision Transformer Model
 
 **LabelBlend** is a powerful and user friendly desktop application tool designed for generating high-quality labelled dataset of synthetic images with random augmentation and lightning. developed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training. it uses png cutouts and merge with background environment with random location, rotation and scaling vectors. its uses a concept called synthetic data generation to fulfill the labelled data scarcity and underfitting problem in computer vision.
 
@@ -98,6 +100,8 @@ python main.py
 
 
 🤝 Contributing
+    Meta SAM 2 Model Source - 
+    https://github.com/facebookresearch/sam2
     
     Contributions, feedback, and feature requests are welcome! Please open an issue or submit a pull request.
 
