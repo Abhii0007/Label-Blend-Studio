@@ -4,6 +4,14 @@
 
 Vision Model used for Segment automation - META (SAM 2) Vision Transformer Model
 
+🚀 Installation
+Microsoft Store
+
+Download the latest version from the Microsoft Store.
+![Download from store]([images/Home.jpg](https://apps.microsoft.com/detail/9P7GN6ZVZTVR))
+
+
+
 ## Project Tutorial on Youtube
 [![YouTube](https://img.icons8.com/color/48/000000/youtube-play.png)](https://youtu.be/Pplf59qdIj4)
 
