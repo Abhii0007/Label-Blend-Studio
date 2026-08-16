@@ -3,7 +3,7 @@ Experience the next generation of AI-assisted dataset creation, annotation, and 
 
 > Human-guided end-to-end AI pipeline for creating AI-ready computer vision datasets.
 Learn more..
-[🚀 Visit LabelBlend](https://labelblend-studio.vercel.app/)
+[🚀 Visit LabelBlend handle ](https://labelblend-studio.vercel.app/)
 
 
 # 🧠 LabelBlend v1.1 — AI Powered Image segmentation and augmentation Tool For computer vision.
