@@ -2,8 +2,7 @@ Developer Note - 🚀 LabelBlend Pro is launching on 24 August 2026
 Experience the next generation of AI-assisted dataset creation, annotation, and computer vision workflows.
 
 > Human-guided end-to-end AI pipeline for creating AI-ready computer vision datasets.
-Learn more..
-[🚀 Visit LabelBlend handle ](https://labelblend-studio.vercel.app/)
+[🚀 Learn more.. ](https://labelblend-studio.vercel.app/)
 
 
 # 🧠 LabelBlend v1.1 — AI Powered Image segmentation and augmentation Tool For computer vision.
