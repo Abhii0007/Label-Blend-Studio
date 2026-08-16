@@ -1,4 +1,4 @@
-Developer Note - 🚀 LabelBlend Pro is launching on 24 August 2026
+Developer Note - 🚀 LabelBlend Pro AI Studio Version is launching on 24 August 2026
 Experience the next generation of AI-assisted dataset creation, annotation, and computer vision workflows.
 
 > Human-guided end-to-end AI pipeline for creating AI-ready computer vision datasets.
