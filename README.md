@@ -1,3 +1,11 @@
+Developer Note - 🚀 LabelBlend Pro is launching on 24 August 2026
+Experience the next generation of AI-assisted dataset creation, annotation, and computer vision workflows.
+
+> Human-guided end-to-end AI pipeline for creating AI-ready computer vision datasets.
+Learn more..
+[🚀 Visit LabelBlend](https://labelblend-studio.vercel.app/)
+
+
 # 🧠 LabelBlend v1.1 — AI Powered Image segmentation and augmentation Tool For computer vision.
 
 **LabelBlend** is a powerful and user friendly desktop application tool designed for generating high-quality labelled dataset of synthetic images with random augmentation and lightning. developed for AI practitioners, computer vision engineers, and researchers, it allows automatic seamless placement over randomized backgrounds to create rich, labeled datasets for model training. it uses png cutouts and merge with background environment with random location, rotation and scaling vectors. its uses a concept called synthetic data generation to fulfill the labelled data scarcity and underfitting problem in computer vision.
