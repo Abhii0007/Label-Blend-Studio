@@ -12,7 +12,7 @@ Experience the next generation of AI-assisted dataset creation, annotation, and 
 Vision Model used for Segment automation - META (SAM 2) Vision Transformer Model
 
 🚀 Installation
-## Download on Microsoft Store
+## Download augmentor variant on Microsoft Store
 
 <a href="https://apps.microsoft.com/detail/9P7GN6ZVZTVR?hl=en-us&gl=IN&ocid=pdpshare">
   <img src="images/ms_store.png" alt="Download from Microsoft Store" width="40">
