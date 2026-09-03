@@ -1,5 +1,21 @@
-Developer Note - 🚀 LabelBlend Pro AI Studio Version is launching on 24 August 2026, 
+Developer Note - 🚀 LabelBlend Pro AI Studio Version is live Microsoft Store, 
 Experience the next generation of AI-assisted dataset creation, annotation, and computer vision workflows.
+
+🚀 Installation
+## Download labelBlend Pro from Microsoft Store
+
+<a href="https://apps.microsoft.com/detail/9N8L5LK3Z4LV?hl=en-us&gl=IN&ocid=pdpshare">
+  <img src="images/ms_store.png" alt="Download from Microsoft Store" width="40">
+</a>
+
+## Download LabelBlend Lite 
+
+<a href="https://apps.microsoft.com/detail/9P7GN6ZVZTVR?hl=en-us&gl=IN&ocid=pdpshare">
+  <img src="images/ms_store.png" alt="Download from Microsoft Store" width="40">
+</a>
+
+
+
 
 > Human-guided end-to-end AI pipeline for creating AI-ready computer vision datasets.
 [🚀 Learn more.. ](https://labelblend-studio.vercel.app/)
@@ -11,12 +27,6 @@ Experience the next generation of AI-assisted dataset creation, annotation, and 
 
 Vision Model used for Segment automation - META (SAM 2) Vision Transformer Model
 
-🚀 Installation
-## Download augmentor variant on Microsoft Store
-
-<a href="https://apps.microsoft.com/detail/9P7GN6ZVZTVR?hl=en-us&gl=IN&ocid=pdpshare">
-  <img src="images/ms_store.png" alt="Download from Microsoft Store" width="40">
-</a>
 
 ## Project Tutorial on Youtube
 [![YouTube](https://img.icons8.com/color/48/000000/youtube-play.png)](https://youtu.be/Pplf59qdIj4)
